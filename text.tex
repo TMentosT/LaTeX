@@ -1,0 +1,419 @@
+\documentclass[a4paper,12pt,twoside]{article}
+\usepackage{FEMJ_2015_2}
+\usepackage{amsbib}
+
+\newtheorem{defi}{\indent Определение}
+%\newtheorem{thm}{\indent  Теорема}
+%\newtheorem{lem}{\indent  Лемма}
+\newtheorem{cor}{\indent  Следствие}
+\newtheorem{sta}{\indent  Утвержнение}
+
+%\renewcommand{\thedefi}{\arabic{part}\arabic{defi}}
+%\renewcommand{\thethm}{\arabic{thm}}
+%\renewcommand{\thecor}{\arabic{cor}}
+%\renewcommand{\thelem}{\arabic{lem}}
+%\renewcommand{\thesta}{\arabic{part}\arabic{sta}}
+%\renewcommand{\theequation}{\arabic{equation}}
+
+%\renewcommand{\baselinestretch}{1,5}
+
+\begin{document}
+\count0=1\sbox{\pagebox}{1--6}                       %%%%%%%%%%%%%%%% Исправить
+
+\UDC{517.5}
+\AMS{30A10, 30C10, 30C15}
+
+\SupportedBy{Работа выполнена при финансовой поддержке Российского фонда
+фундаментальных исследований (грант 11-01-00038)}
+
+\Submitted{12 марта 2012 г.}% дата получения работы
+
+\Title{Неравенства для модулей рациональных функций}
+
+\Author{С.\,И.~Калмыков}{Дальневосточный федеральный университет, 690950, г.~Владивосток, ул.~Суханова,~8;
+                         Институт прикладной математики ДВО РАН, 690041, Владивосток, ул. Радио, 7}
+{sergeykalmykov@inbox.ru}
+
+\markboth{Неравенства для модулей рациональных функций}{С.\,И.~Калмыков}      %%%%%%%%%%%% Левый и правый Колонтитулы
+
+\Summary{Kalmykov~S.\,I.}{Inequalities for Modulus of Rational Functions}  % {ФИО на английском} {аннотация на английском}
+{Inequalities for modulus of rational functions
+with prescribed poles lying in the exterior of the unit disk were
+obtained in this research. The case when the rational function has
+no zeros in the unit disk has also been considered.
+
+\keywords{inequalities for rational functions, Blaschke product, Schwarz lemma.}}  % {ключевые слова на английском}}
+
+\makeface
+
+\Abstract{В работе получены неравенства для модулей
+рациональных функций с предписанными полюсами, лежащими во
+внешности единичного круга. Рассмотрен также случай, когда
+рациональная функция не имеет нулей в единичном круге.
+
+Ключевые слова: \tit{неравенства для рациональных функций, произведение Бляшке, лемма Шварца.}}
+
+
+\section*{Введение}
+
+Введем обозначения
+$$
+{\cal P}_n^c := \left\{p(z): p(z) = \sum\limits_{k=0}^{n}c_kz^k,
+\,\, c_k \in \mathbb{C}, \, c_n\ne 0\right\},
+$$
+$$
+{\cal R}_{n,m}^c := \left\{r(z): r(z) =
+\frac{p(z)}{\prod\limits_{k=1}^{n}(z-a_k)}, \, p(z) \in {\cal
+P}_m^c, a_k \in \mathbb{C}, \ |a_k|>1, k=\overline{1,n}\right\}.
+$$
+
+Для функции $r(z)\in {\cal R}_{n,m}^c$ определим функцию
+$$
+B(z) = \prod\limits_{k=1}^{n}\frac{1-\overline{a}_kz}{z-a_k}
+$$
+и положим
+$$
+||f||:= \max\limits_{|z|=1}|f(z)|,
+$$
+$$
+r^{*}(z)=B(z) \overline{r\left(\frac{1}{\overline{z}}\right)},
+$$
+а для полинома $p(z)\in {\cal P}_n^c$ рассмотрим ``взаимный''
+полином \cite[c. 256]{Gov}
+$$
+p^{*}(z)=z^n \overline{p\left(\frac{1}{\overline{z}}\right)}.
+$$
+
+Оценкам роста полиномов и рациональных функций посвящено большое
+количество работ (см., например, статьи \cite{Ank}--\cite{ShLi},
+а также монографию \cite[глава 12]{Rah02} и библиографию в них).
+Классическим является неравенство
+
+
+$$
+\max\limits_{|z|=\rho\ge1}|p(z)|\leq \rho^n||p||,
+$$
+справедливое для всех полиномов класса ${\cal P}_n^c$. Если также
+известно, что у полинома указанного класса нет нулей в единичном
+круге, то справедливо неравенство Анкени~--- Ривлина (см.
+\cite{Ank})
+
+$$
+\max\limits_{|z|=\rho\ge1}|p(z)|\leq \frac{\rho^n+1}{2}||p||.
+$$
+Усиление этого неравенства было получено в работе \cite{Dub01}.
+
+Для функций $r(z)\in {\cal R}_{n,m}^c$ справедливо неравенство
+(см. \cite{Gov}, \cite{Gon})
+\begin{equation}\label{rat} |r(z)|\leq |z|^{(m-n)_{+}} |B(z)|\,||r||, \, \, \,
+|z|>1,
+\end{equation}
+где $x_{+}=\max(x,0)$. Равенство в $(\ref{rat})$ достигается при
+$r(z)=z^kB(z), \, k\in \mathbb{N}_0$. Если у рациональной функции
+класса ${\cal R}_{n,m}^c$, $m\leq n$,  нет нулей в единичном
+круге, то верно  неравенство
+\begin{equation}\label{ranri}
+ |r(z)|\leq \frac{|B(z)|+1}{2}||r||, \, \,
+\, |z|>1,
+\end{equation}
+с равенством для функции $r(z)=\alpha B(z)+\beta$, где
+$|\alpha|=|\beta|$ (см. \cite{Gov}).
+
+В недавней работе автора \cite{Kalm} были получены точные
+двусторонние неравенства при дополнительном ограничении на $|z|$,
+дополняющие и уточняющие неравенство (\ref{rat}). Цель настоящей
+заметки -- усиление и дополнение результатов работ \cite{Gov} и
+\cite{Kalm} без дополнительных ограничений на $|z|$. Нам
+понадобится следующая лемма 1, вытекающая из леммы Шварца (см.
+\cite[стр. 320]{Gol}). Другие приложения этого результата можно
+найти, например, в работах \cite{Dub01}, \cite{GovRah}.
+
+\begin{lem} Пусть $f(z)$~--- аналитическая в единичном круге $|z|<1$ функция
+такая, что $|f(z)|< 1$ при $|z|<1$. Тогда при $|z|<1$
+\begin{equation}\label{ine}
+|f(z)|\leq\frac{|z|+|f(0)|}{1+|f(0)||z|},
+\end{equation}
+причем при $z\ne0$ равенство в $(\ref{ine})$ будет достигаться
+только в том случае, когда $f(z)=\varepsilon
+\dfrac{z+a}{1+\overline{a}z}$, $|\varepsilon|=1$, $|a|<1$, и $\arg
+z=\arg a$, если $a\ne 0$.
+\end{lem}
+
+\section*{Основные результаты}
+
+\begin{thm} Пусть рациональная функция $r(z)$ принадлежит классу ${\cal
+R}_{n,m}^c$ и $||r||=1$. Тогда справедливо неравенство
+\begin{equation}\label{rin}
+ |r(z)|\leq \frac{\displaystyle
+\prod\limits_{k=1}^{n}|a_k|+|c_mz|}{\displaystyle
+|c_m|+|z|\prod\limits_{k=1}^{n}|a_k|}|B(z)||z|^{m-n}, \, \, \, |z|>1.
+\end{equation}
+
+
+Если $r(z)=z^kB(z), \, k\in \mathbb{N}_0$, то неравенство
+$(\ref{rin})$ становится равенством для любого $z$, $|z|>1$.
+\end{thm}
+\medskip
+
+\begin{proof} Рассмотрим функцию
+$$
+f(\zeta)= \zeta^{m-n}
+\overline{r\left(\frac{1}{\overline{\zeta}}\right)}B(\zeta)=
+\frac{\overline{c_m}}{(-1)^n\prod\limits_{k=1}^{n}a_k}+ ... .
+$$
+
+Она аналитическая в единичном круге, так как полюса функции
+$\overline{r(1/\overline{\zeta})}$ являются нулями функции
+$\zeta^{m-n}B(\zeta)$ с учетом кратности. Тогда из того, что
+$$
+|f(\zeta)|= |\zeta^{m-n}|
+\left|\overline{r\left(\frac{1}{\overline{\zeta}}\right)}\right||B(\zeta)|=\left|\overline{r\left(\frac{1}{\overline{\zeta}}\right)}\right| \leq 1, \, \, \, |z|=1,
+$$
+следует, что $f(z)$
+ ограничена по модулю единицей в единичном круге и, таким образом, удовлетворяет условиям леммы 1, при этом
+$f(0)=(-1)^n\overline{c_m}/\left(\prod\limits_{k=1}^{n}a_k\right)$.
+
+Выпишем неравенство (\ref{ine}) для функции $f(\zeta)$
+$$
+|\zeta^{m-n}
+\overline{r\left(\frac{1}{\overline{\zeta}}\right)}B(\zeta)|\leq
+\frac{|\zeta|+|c_m|/\left(\prod\limits_{k=1}^{n}|a_k|\right)}{1+|\zeta||c_m|/\left(\prod\limits_{k=1}^{n}|a_k|\right)}, \, \, \, \, |\zeta|<1.
+$$
+
+
+Делая замену переменной $z=1/\overline{\zeta}$, приходим к
+неравенству
+$$
+|\overline{r(z)}B(1/\overline{z})|\leq
+|z^{m-n}|\frac{1+|z||c_m|/\left(\prod\limits_{k=1}^{n}|a_k|\right)}{|z|+|c_m|/\left(\prod\limits_{k=1}^{n}|a_k|\right)}, \, \, \, \, |z|>1,
+$$
+а замечая, что $\overline{B(1/\overline{z})}=1/B(z)$, получаем
+неравенство (\ref{rin}).
+
+ Пусть теперь $r(z)=z^kB(z), \, k\in
+\mathbb{N}_0$, тогда ясно, что $m-n=k$, а
+$|c_m|=\prod\limits_{k=1}^{n}|a_k|$, и равенство в (\ref{rin})
+очевидно. Теорема доказана.
+\end{proof}
+
+Из принципа максимума модуля и убывания при $x\geq1$ функции
+$h(x)=\dfrac{1+ax}{a+x}, \, 0<a<1$, получаем, что
+$$
+\frac{\displaystyle
+\prod\limits_{k=1}^{n}|a_k|+|c_mz|}{\displaystyle
+|c_m|+|z|\prod\limits_{k=1}^{n}|a_k|}\leq1, \, \, \, \mbox{для всех $z$ таких, что} \, \, |z|>1.
+$$
+Таким образом, неравенство (\ref{rin}) улучшает неравенство
+(\ref{rat}).
+
+
+\begin{cor} Пусть полином $p(z)$ принадлежит классу ${\cal P}_n^c$ и
+$||p||~=~1$, тогда  выполняется неравенство
+$$
+|p(z)|\leq \frac{\displaystyle
+1+|c_nz|}{\displaystyle
+|c_n|+|z|}|z|^{n}, \, \, \, |z|>1.
+$$
+
+Равенство для любой точки $z: |z|>1$  достигается в случае
+полинома $P(z) = c_nz^n$, $ |c_n|=1$. \end{cor}
+
+\begin{cor}  Пусть рациональная функция $r(z)$ принадлежит
+классу ${\cal R}_{n,m}^c$ и $||r||=1$. Тогда для $|z|>1$
+справедливо неравенство
+$$
+|r^{*}(z)|\leq \frac{\displaystyle
+\prod\limits_{k=1}^{n}|a_k|+|c_0z|}{\displaystyle
+|c_0|+|z|\prod\limits_{k=1}^{n}|a_k|}|B(z)|.
+$$
+\end{cor}
+
+\begin{proof} Из того, что $r(z)\in {\cal R}_{n,m}^c$,
+следует
+$$
+r(z) =
+\frac{p(z)}{\prod\limits_{k=1}^{n}(z-a_k)}.
+$$
+Тогда
+$$
+\frac{r^{*}(z)}{z^{n-m}}=z^{m-n}B(z)\overline{r\left(\frac{1}{\overline{z}}
+\right)}=\frac{p^{*}(z)}{\prod\limits_{k=1}^{n}(z-a_k)},
+$$
+то есть функция $r^{*}(z)/z^{n-m}$  принадлежит классу ${\cal
+R}_{n,m}^c$. Так как $||r^{*}||=||r||=1$, то к $r^{*}(z)/z^{n-m}$
+применима теорема 1. Следствие доказано.
+\end{proof}
+
+\begin{lem} Пусть $r(z)\in {\cal R}_{n,m}^c$. Если  функция $r(z)$ не
+имеет нулей в единичном круге $|z|<1$, то
+\begin{equation}\label{rr}
+|z^{n-m}r(z)|\leq|r^{*}(z)|, \,\,\, |z|>1.
+\end{equation}
+
+Для функции $r(z)=\alpha B(z)+\beta$, где $|\alpha|=|\beta|$,
+справедливо равенство в $(\ref{rr})$.
+\end{lem}
+
+\begin{proof} Так как функция $r$ не имеет нулей в
+единичном круге, то рациональная функция
+$$
+\frac{r^{*}(z)}{z^{n-m}}=z^{m-n}B(z)\overline{r\left(\frac{1}{\overline{z}}
+\right)}=\frac{p^{*}(z)}{\prod\limits_{k=1}^{n}(z-a_k)}
+$$
+имеет конечные нули только в замкнутом единичном круге.
+Следовательно, функция \\ $z^{n-m}r(z)/r^{*}(z)$ аналитическая в
+$|z|\geq1$. На единичной окружности $|z|=1$
+$$
+\left|\frac{z^{n-m}r(z)}{r^{*}(z)}\right|=\left|\frac{p(z)}{p^{*}(z)}\right|=1.
+$$
+Из принципа максимума модуля следует
+$$
+\frac{|z^{n-m}r(z)|}{|r^{*}(z)|}\leq1, \, \, \, \, |z|\geq1,
+$$
+что эквивалентно  неравенству (\ref{rr}). Случай равенства
+проверяется непосредственно. Лемма доказана.
+\end{proof}
+
+Из следствия 2 и леммы 2 вытекает теорема.
+
+\begin{thm} Пусть рациональная функция $r(z)$ принадлежит классу ${\cal
+R}_{n,m}^c$, не имеет нулей в отрытом единичном круге, и
+$||r||=1$. Тогда справедливо неравенство
+\begin{equation}\label{rinn}
+ |r(z)|\leq \frac{\displaystyle
+\prod\limits_{k=1}^{n}|a_k|+|c_0z|}{\displaystyle
+|c_0|+|z|\prod\limits_{k=1}^{n}|a_k|}|B(z)||z|^{m-n}, \, \, \, |z|>1.
+\end{equation}
+\end{thm}
+
+
+Неравенство $(\ref{rinn})$ в условиях предыдущего следствия, как и
+неравенство $(\ref{rin})$, улучшает неравенство $(\ref{rat})$.
+Следующая теорема уточняет неравенство $(\ref{ranri})$.
+
+
+\begin{thm} Пусть рациональная функция $r(z)$, не имеющая нулей в
+отрытом единичном круге, принадлежит классу ${\cal R}_{n,m}^c$,
+$m\leq n$. Тогда для $z: |z|>1$ справедливо неравенство
+$$\
+|r(z)|\leq \frac{|B(z)|+1}{|z|^{n-m}+1}||r||.
+$$
+
+Равенство достигается для функции $r(z)=\alpha B(z)+\beta$, где
+$|\alpha|=|\beta|$. \end{thm}
+
+{\it Доказательство} немедленно следует из леммы 2 и следующего
+утверждения.
+
+ \begin{lem} {\rm \cite{Gov}}
+ Пусть рациональная функция $r(z)$ принадлежит классу ${\cal
+R}_{n,m}^c$, $m\leq n$ и $||r||=1$. Тогда для $z: |z|>1$
+справедливо неравенство
+$$
+|r(z)|+|r^{*}(z)|\leq\left(|B(z)|+1\right).
+$$
+\end{lem}
+
+
+%%====================================
+ \begin{thebibliography}{12}
+ \setlength{\parsep}{0pt}\setlength{\itemsep}{3pt}
+%%====================================
+
+\Bibitem{Ank}
+\by N.\,C.~Ankeny, T.\,J.~Rivlin
+\paper On a theorem of S.~Bernstein
+\jour Pacific J. Math.
+\yr 1955
+\vol 5
+\issue suppl. 2
+\pages 849--852
+
+\RBibitem{Gonch2}
+\by А.\,А.~Гончар
+\paper Оценки роста рациональных функций и некоторые их приложения
+\jour Матем. сб.
+\yr 1967
+\vol 72(114)
+\issue 3
+\pages
+489--503
+
+\Bibitem{Gov}
+\by N.\,K.~Govil, R.\,N.~Mohapatra
+\paper Inequalities for Maximum Modulus of Ratioanl Functions with Prescribed Poles
+\inbook Approximation Theory: In Memory of A.\,K.~Varma
+\publ Marcel Dekker, Inc.
+\publaddr New York
+\yr 1998
+\pages 255--263
+
+\Bibitem{Qaz92}
+\by M.\,A.~Qazi
+\paper On the maximum modulus of polynomials
+\jour Proc. Amer. Math. Soc.
+\yr 1992 \vol 115
+\issue 2
+\pages 337--349
+
+\Bibitem{ShLi}
+\by W.\,M.~Shah, A.~Liman
+\paper Integral estimates for the family of B-operators
+\jour Operators and matrices
+\yr 2011
+\vol 5
+\issue 1
+\pages 79--87
+
+\Bibitem{Rah02}
+\by Q.\,I.~Rahman,  G.~Schmeisser
+\book Analytic theory of polynomials
+\publaddr Oxford
+\publ Oxford University Press
+\yr 2002
+
+\RBibitem{Dub01}
+\by В.\,Н.~Дубинин
+\paper О применении леммы Шварца к неравенствам для целых функций с ограничениями на нули
+\jour Зап. научн. сем. ПОМИ
+\yr 2006
+\vol 337
+\pages 101--112
+
+\RBibitem{Gon}
+\by А.\,А.~Гончар
+\paper О задачах Е.\,И.~Золотарева, связанных с рациональными функциями
+\jour Матем. сб.
+\yr 1969
+\vol 78(120)
+\issue 4
+\pages 640--654
+
+\RBibitem{Kalm}
+\by С.\,И.~Калмыков
+\paper Об оценке модуля рациональной функции
+\jour Зап. научн. сем. ПОМИ
+\yr 2009
+\vol 371
+\pages 109--116
+
+\RBibitem{Gol}
+\by Г.\,М.~Голузин
+\book Геометрическая теория функций комплексного переменного
+\publaddr М
+\publ Наука
+\yr 1966
+
+\Bibitem{GovRah}
+\by N.\,K.~Govil, Q.\,I.~Rahman, G.~Schmeisser
+\paper On the derivative of a polynomial
+\jour Illinois Journal of Mathematics
+\yr 1979
+\vol 23
+\pages 319--329
+
+\end{thebibliography}
+
+\EndArticle
+
+\end{document}
