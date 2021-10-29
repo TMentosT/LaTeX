@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.10.29)  29 OCT 2021 19:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.10.29)  30 OCT 2021 01:15
 entering extended mode
 **./Prakt.tex
 (Prakt.tex
@@ -1202,8 +1202,7 @@ tex.def
 File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count409
 \l__pdf_internal_box=\box125
-)
-No file Prakt.aux.
+) (Prakt.aux)
 \openout1 = `Prakt.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -1224,6 +1223,7 @@ LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Info: Redefining \th on input line 4.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+
 (C:\Users\Tim19\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -1317,16 +1317,6 @@ Package amsmath Warning: Cannot use `split' here;
 (amsmath)                trying to recover with `aligned' on input line 140.
 
 
-LaTeX Warning: Reference `eq:cases01' on page 2 undefined on input line 144.
-
-
-LaTeX Warning: Reference `eq:multline01' on page 2 undefined on input line 144.
-
-
-
-LaTeX Warning: Reference `eq:complex1' on page 2 undefined on input line 144.
-
-
 Underfull \hbox (badness 3838) in paragraph at lines 167--167
 []|[]\T2A/cmr/m/n/9 1. Обос-но-ва-ние со-зда-ния
  []
@@ -1336,53 +1326,46 @@ LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line
 (C:\Users\Tim19\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-[2] (Prakt.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[2] (Prakt.aux) ) 
 Here is how much of TeX's memory you used:
- 23210 strings out of 478927
- 408403 string characters out of 2852534
- 932689 words of memory out of 3000000
+ 23212 strings out of 478927
+ 408366 string characters out of 2852534
+ 932688 words of memory out of 3000000
  40577 multiletter control sequences out of 15000+600000
  429461 words of font info for 91 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  99i,16n,103p,3244b,388s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\Tim19\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\latt09
-00.pk> <C:\Users\Tim19\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
-ti0900.pk> <C:\Users\Tim19\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi60
-0\larm0600.pk> <C:\Users\Tim19\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/d
-pi600\lacc0900.pk> <C:\Users\Tim19\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t
-2a/dpi600\lasl1000.pk> <C:\Users\Tim19\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/
-lh-t2a/dpi600\labx1000.pk> <C:\Users\Tim19\AppData\Local\MiKTeX\fonts/pk/ljfour
-/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\Tim19\AppData\Local\MiKTeX\fonts/pk/lj
-four/lh/lh-t2a/dpi600\lasx1000.pk> <C:\Users\Tim19\AppData\Local\MiKTeX\fonts/p
-k/ljfour/lh/lh-t2a/dpi600\labx0900.pk> <C:\Users\Tim19\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/lh/lh-t2a/dpi600\larm0900.pk> <C:\Users\Tim19\AppData\Local\MiKTeX
-\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1000.pk> <C:\Users\Tim19\AppData\Local\Mi
-KTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\Tim19\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lasx1200.pk><C:/Users/Tim19/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Tim19/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Use
-rs/Tim19/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pf
-b><C:/Users/Tim19/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmmi7.pfb><C:/Users/Tim19/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmmi9.pfb><C:/Users/Tim19/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb><C:/Users/Tim19/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr7.pfb><C:/Users/Tim19/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Tim19/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Tim19/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Tim19/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Tim1
-9/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-
-Output written on Prakt.pdf (2 pages, 277512 bytes).
+ <C:\Users\Tim19\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2
+a/dpi600\latt0900.pk> <C:\Users\Tim19\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/l
+h-t2a/dpi600\lati0900.pk> <C:\Users\Tim19\AppData\Local\MiKTeX\fonts/pk/ljfour/
+lh/lh-t2a/dpi600\larm0600.pk> <C:\Users\Tim19\AppData\Local\MiKTeX\fonts/pk/ljf
+our/lh/lh-t2a/dpi600\lacc0900.pk> <C:\Users\Tim19\AppData\Local\MiKTeX\fonts/pk
+/ljfour/lh/lh-t2a/dpi600\lasl1000.pk> <C:\Users\Tim19\AppData\Local\MiKTeX\font
+s/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\Tim19\AppData\Local\MiKTeX\
+fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\Tim19\AppData\Local\MiK
+TeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lasx1000.pk> <C:\Users\Tim19\AppData\Local
+\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx0900.pk> <C:\Users\Tim19\AppData\L
+ocal\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm0900.pk> <C:\Users\Tim19\AppDa
+ta\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1000.pk> <C:\Users\Tim19\A
+ppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\Tim
+19\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lasx1200.pk><C:/Users/
+Tim19/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+C:/Users/Tim19/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cme
+x10.pfb><C:/Users/Tim19/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmi10.pfb><C:/Users/Tim19/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi7.pfb><C:/Users/Tim19/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Tim19/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Tim19/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Tim19/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Tim19/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Tim19
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Use
+rs/Tim19/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb
+><C:/Users/Tim19/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symb
+ols/msam10.pfb>
+Output written on Prakt.pdf (2 pages, 277135 bytes).
 PDF statistics:
- 548 PDF objects out of 1000 (max. 8388607)
+ 547 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
