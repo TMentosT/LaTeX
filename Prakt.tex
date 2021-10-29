@@ -1,16 +1,212 @@
-\documentclass[a4paper,10pt,notitlepage,twoside,openany]{book} 
-\usepackage[utf8]{inputenc}
-\usepackage[T2A]{fontenc}
-\usepackage[russian]{babel}
-\author{Дэвид Кэнтрелл}
-\title{Основы Slackware Linux. Официальный учебник.}
-\date{\today}
-\sloppy
+\documentclass[10pt]{article}
+\usepackage{Prakt-oform}
+
 \begin{document}
+\title
+    {Образец статьи  \\<<Компьютерные науки и информационные технологии>>}
+\author
+    {Автор~И.\,О.\authorrefmark{1}, Соавтор~И.\,О.\authorrefmark{2}}
+\email
+    {\authorrefmark{1}author1@site.ru, \authorrefmark{2}author2@site.ru}
+\organization
+    {\authorrefmark{1}Организация, Город, Страна; \authorrefmark{2}}
+
+
+\abstract
+    {Данный текст является образцом оформления статьи.
+    Аннотация кратко характеризует основную цель работы,
+    особенности предлагаемого подхода и~основные результаты.}
+\keywords
+    {образец, пример, оформление}
+
 \maketitle
-\tableofcontents
-\chapter{Очень важный раздел}
-\section{Не менее важный подраздел}
-\subsection{Вот как раз тут и будет всё самое интересное}
-Очень много текста тут....
+
+\section*{Введение}
+После аннотации, но перед первым разделом,
+может идти неформальное введение,
+описание предметной области,
+обоснование актуальности задачи,
+краткий обзор известных результатов,
+и~т.\,п. В любом случае, структура статьи остается прерогативой авторов.
+
+\section{Название раздела}
+Данный документ демонстрирует оформление статьи,
+подаваемой на международную конференцию.
+
+\paragraph{Название параграфа.}
+
+Нет никаких ограничений на~количество разделов и~параграфов в~статье.
+
+\paragraph{Теоретическую часть работы}(если таковая имеется) желательно структурировать
+с~помощью окружений
+Def, Axiom, Hypothesis, Problem, Lemma, Theorem, Corollary, State, Example, Remark.
+
+\begin{Def}
+    Математический текст \emph{хорошо структурирован},
+    если в~нём выделены определения, теоремы, утверждения, примеры, и~т.\,д.,
+    а~неформальные рассуждения (мотивации, интерпретации)
+    вынесены в~отдельные параграфы.
+\end{Def}
+
+\begin{State}
+    Мотивации и~интерпретации наиболее важны для понимания сути работы.
+\end{State}
+
+\begin{Theorem}
+    Не~менее $90\%$ коллег, заинтересовавшихся Вашей статьёй,
+    прочитают в~ней не~более~$10\%$ текста,
+    причём это будут именно те~разделы, которые не содержат формул.
+\end{Theorem}
+
+\begin{Remark}
+    Выше показано применение окружений
+    Def, Theorem, State, Remark.
+\end{Remark}
+
+\section{Некоторые формулы}
+
+Образец формулы: $f(x_i,\alpha^\gamma)$.
+
+Образец выключной формулы без номера:
+\[
+    y(x,\alpha) =
+    \begin{cases}
+        -1, & \text{если } f(x,\alpha)<0;  \\
+        +1, & \text{если } f(x,\alpha)\geq 0.
+    \end{cases}
+\]
+
+Образец выключной формулы с номером:
+\begin{equation}\label{eq:cases01}
+    F(\mathbf{p}) \to \min ,\quad
+    F(\mathbf{p}) =
+        \begin{cases}
+            f(\mathbf{p},\mathbf{s}_0), & \mathbf{p} \in \Omega _p^{(st)}(\mathbf{s}_0), \\
+            + \infty , & \mathbf{p} \notin \Omega _p^{(st)}(\mathbf{s}_0),
+        \end{cases}
+\end{equation}
+
+Образец выключной формулы, разбитой на две строки с~помощью окружения multline:
+\begin{multline}\label{eq:multline01}
+\psi (x,y,t)=
+    \frac{(t-t_{2})(t-t_{3})(t-t_{4})}{(t_{1}-t_{2})(t_{1}-t_{3})(t_{1}-t_{4})}  f_{1}(x,y) +
+    \frac{(t-t_{1})(t-t_{3})(t-t_{4})}{(t_{2}-t_{1})(t_{2}-t_{3})(t_{2}-t_{4})}  f_{2}(x,y) + \\
+   +\frac{(t-t_{1})(t-t_{2})(t-t_{4})}{(t_{3}-t_{1})(t_{3}-t_{2})(t_{3}-t_{4})}  f_{3}(x,y) +
+    \frac{(t-t_{1})(t-t_{2})(t-t_{3})}{(t_{4}-t_{1})(t_{4}-t_{2})(t_{4}-t_{3})}  f_{4} (x,y).
+\end{multline}
+
+Образец набора нумерованных формул, выровненных с помощью окружения align:
+\begin{align}
+	\vartheta_{H1}(t) ={}& \left(0.85 \frac{\rho_1(t)}{\rho_0}\right)^{k - 1} \vartheta_0, \label{eq:al1}\\
+	\vartheta_{H2}(t) ={}& \left(0.85 \frac{\rho_2(t)}{\rho_1}\right)^{k - 1} \vartheta_{H1}, \label{eq:al2}\\
+	\vartheta_{H3}(t) ={}& \left(0.85 \frac{\rho_3(t)}{\rho_2}\right)^{k - 1} \vartheta_{H2}. \label{eq:al3}
+\end{align}
+
+Образец набора формул под одним номером, выровненных с помощью окружения gathered
+\begin{equation}\label{eq:gather1}
+    \begin{gathered}
+        (1 + \gamma \lambda )u''''(x,\lambda ) +
+        {a_x}[({m_2} + 1 - x)u'(x,\lambda )]' +
+        {\lambda ^2}u(x,\lambda ) =  - \delta _j^1 - \delta _j^3x, \\
+        u(0,\lambda ) = 0;\quad
+        u'(0,\lambda ) = 0;\quad
+        u(1,\lambda ) = \delta _j^2;\quad
+        u'(1,\lambda ) = \delta _j^4;\quad
+        j = 1,2,3,4.
+    \end{gathered}
+\end{equation}
+
+Образец сложного многострочного набора формул под одним номером
+\begin{equation}\label{eq:complex1}
+\begin{gathered}
+J_0\ddot\beta_0 = - p_1\dot\beta_0 - p_2\beta _0 + \mathbf{S}(\beta _1 + \beta_2),\quad
+   m_1\ddot y_1 = (1 + m_1 + m_2)\beta_0 + P_1 - F_e,\\
+J_0\ddot\beta_0 + J_1\ddot\beta_1 = M_1,\quad
+  m_2[(1 + a)\ddot\beta_1 + \ddot y_1 + \ddot y_2] = P_2 + a_x m_2\beta_2,\\
+J_2(\ddot\beta_1 + \ddot\beta_2) = M_2 - a P_2,\quad
+  \mathbf{S}(.) = p_3d()/dt + p_4 \cdot () + p_5\int\limits_0^t ()\,dt, \\
+\ddot u + u'''' + \gamma \dot u'''' + a_x[(m_2 + (1 - x))u']' =  - \ddot y_1 - x\ddot\beta_1,\quad
+  ()' = \partial ()/\partial x,\\
+u(0,t) = 0;\quad
+u'(0,t) = 0,\quad
+u(1,t) = y_2(t),\; u'(1,t) = \beta_2(t),\\
+M_1 = u''(0,t) + \gamma \dot u''(0,t), \quad
+P_1 = - u'''(0,t) - \gamma \dot u'''(0,t),\\
+M_2 = - u''(1,t) - \gamma \dot u''(1,t),\quad
+  P_2 = u'''(0,t) + \gamma \dot u'''(0,t),\\
+\begin{split}
+\beta_0(0) = \beta_1(0) = \beta_2(0) = \dot\beta_0(0) = \dot\beta_1(0) ={}& \dot\beta_2(0) = y_1(0) = \\
+        {} = y_2(0) = \dot y_1(0) & {} = \dot y_2(0) = 0,\quad u(x,0) = \dot u(x,0) = 0.
+\end{split}
+\end{gathered}
+\end{equation}
+
+Образцы ссылок: формулы~\eqref{eq:cases01}, \eqref{eq:multline01} и система~\eqref{eq:complex1}.
+
+\section{Таблицы}
+Пример таблицы.
+\begin{table}[!ht]
+\caption{Нумерованная таблица}\label{tab:table1}
+\centering\small
+\begin{tabular}{|c|c|c|c|c|c|} \hline
+$t$  & Шаг $k$ & \parbox[c][2.5em]{5em}{\centering Прогноз $Y_{\text{р}}(N+k)$} & $U(k)$ & \parbox{9em}{\centering Нижняя граница $Y_{\text{р}}(N+k)-U(k)$} & \parbox{9em}{\centering Верхняя граница $Y_{\text{р}} (N+k)+U(k)$} \cr \hline
+10 & 1 & 90.3613 & 2.0310 & 88.3303 & 92.3923 \cr \hline
+11 & 2 & 92.6784 & 2.1494 & 90.5290 & 94.8278 \cr \hline
+12 & 3 & 94.9954 & 2.2814 & 92.7140 & 97.2768 \cr \hline
+13 & 4 & 97.3125 & 2.4248 & 94.8877 & 99.7373 \cr \hline
+14 & 5 & 99.6296 & 2.5777 & 97.0518 & 102.2073 \cr \hline
+\end{tabular}
+\end{table}
+
+Еще один пример: таблица без номера (допускается только в случае, когда в статье только одна таблица).
+\begin{table}[!ht]
+\centering \small
+\ncaption{Таблица без номера} % замена команде \caption
+\begin{tabular}{|p{1.6in}|p{3.1in}|} \hline
+\centering{Стадии} & \centering{Результат} \cr \hline
+1. Обоснование создания АС  & Научно"=технический отчет \cr \hline
+2. Техническое задание & Техническое задание  \cr \hline
+3. Технический проект & Документы спецификаций вариантов использования, модель данных и БД, модель пользовательского интерфейса, сценарии тестов \cr \hline
+4. Рабочая документация & Комплект пользовательской документации АИС  \cr \hline
+5. Ввод в действие & Готовая АИС \cr \hline
+\end{tabular}
+\end{table}
+\section*{Заключение}
+Если этот раздел присутствует, то он не~должен дословно повторять аннотацию.
+Обычно здесь отмечают,
+каких результатов удалось добиться,
+какие проблемы остались открытыми.
+
+\begin{thebibliography}{1}
+\bibitem{author09anyscience}
+    \BibAuthor{Author\;N.}
+    \BibTitle{Paper title}~//
+    10-th Int'l. Conf. on Anyscience, 2009.~--- Vol.\,11, No.\,1.~--- Pp.\,111--122.
+\bibitem{myHandbook}
+    \BibAuthor{Автор\;И.\,О.}
+    Название книги.~---
+    Город: Издательство, 2009.~--- 314~с.
+\bibitem{author09first-word-of-the-title}
+    \BibAuthor{Автор\;И.\,О.}
+    \BibTitle{Название статьи}~//
+    Название конференции или сборника,
+    Город:~Изд-во, 2009.~--- С.\,5--6.
+\bibitem{author-and-co2007}
+    \BibAuthor{Автор\;И.\,О., Соавтор\;И.\,О.}
+    \BibTitle{Название статьи}~//
+    Название журнала.~--- 2007.~--- Т.\,38, \No\,5.~--- С.\,54--62.
+\bibitem{bibUsefulUrl}
+    \BibUrl{www.site.ru}~---
+    Название сайта~--- 2007.
+\bibitem{voron06latex}
+    \BibAuthor{Воронцов~К.\,В.}
+    \LaTeXe\ в~примерах.~---
+    2006.~---
+    \BibUrl{http://www.ccas.ru/voron/latex.html}.
+\bibitem{Lvovsky03}
+    \BibAuthor{Львовский~С.\,М.} Набор и вёрстка в пакете~\LaTeX.~---
+    3-е издание.~---
+    Москва:~МЦHМО, 2003.~--- 448~с.
+\end{thebibliography}
+
 \end{document}

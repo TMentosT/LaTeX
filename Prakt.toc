@@ -1,4 +1,0 @@
-\babel@toc {russian}{}\relax 
-\contentsline {chapter}{\numberline {1}Очень важный раздел}{3}{}%
-\contentsline {section}{\numberline {1.1}Не менее важный подраздел}{3}{}%
-\contentsline {subsection}{\numberline {1.1.1}Вот как раз тут и будет всё самое интересное}{3}{}%
